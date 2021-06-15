@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;    
+    font-family: roboto;
+}
+#logo{
+    width: 50%;
+    padding-right: 10px;
+}
+header{
+    background-color: #EAC926;
+    font-size: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: center;
+}
+.barra{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    align-items: center;
+}
+#barrab{
+    width: 90%;
+    height: 5vh;
+    border-right: #ebebeb solid 1px;
+    border: solid 1px white;
+    border-radius: 5px 0 0 5px;
+    padding: 5px 0px 5px 5px;
+}
+.lupa{
+    background-color: white;
+    width: 16px;
+    border-radius: 0px 3px 3px 0px;
+    padding:10px 2px;
+    height: 5vh;
+    color: #666;
+}
+#cuotas{
+    width: 100%;
+    margin: 25px 0 25px 0;
+    text-align: center;
+}
+ul{
+    display: none;
+}
+.burger-menu{
+    background-color: #1259c4;
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    border-radius: 4px;
+    width: 40px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+img{
+    width: 100%;
+    height: auto;
+}
+.titulares{
+    font-size: 24px;
+    line-height: 32px;  
+    margin: 20px 0;
+}
+.precios{
+    font-size: 18px;
+    line-height: 26px;  
+    width: 30%; 
+    color: #666;
+}
+.descuentos{
+    font-size: 16px;
+    color: green;
+    line-height: 24px; 
+    width: 70%;
+    align-self: flex-end;
+}
+.descripciones{
+    font-size: 16px;
+    line-height: 24px;  
+    display: none;  
+    margin-top: 15px;
+}
+main{
+    color: #666;
+    background-color: #ebebeb;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+main section{
+    width: 90vw;
+}
+.truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    color: #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+.descripcion{
+    background-color: white;
+    border-top: solid 1px #ebebeb;
+    margin-bottom: 10px;
+    padding: 15px; 
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.footer{
+    color:#666;
+    padding: 0px;
+    text-align: center;
+    padding: 30px;
+}
+
+#sin{
+    text-align: start;
+}
+.credit,.gift,.seguridad{
+    color:#1259c4;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+#credit,#gift,#seguridad{
+    margin-bottom: 40px;
+    padding: 20px;
+}
+
+@media (min-width:361px){
+
+    #logo{
+        width: 35%;
+    }
+    .barra{
+        width: 30%;
+    }
+    #cuotas{
+        width: 35%;
+    }
+    .articulo{
+        box-shadow: 0 0 10px rgb(100, 100, 100);
+    }
+    ul{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .burger-menu{
+        display:none;
+    }
+    .descripciones{
+        display:block
+    }
+    .secciones{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 40px;
+        justify-content: space-between;
+    }
+    ul{
+        width: 40%;
+    }
+    #secc{
+        display: flex;
+        justify-content:space-between;
+    }
+    #login{
+        display: flex;
+        justify-content:space-between;
+    }
+
+
+}
+@media (min-width:769px){
+    
+}
