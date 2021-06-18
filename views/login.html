@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7be41f1be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="images/mercado-libre-logo.svg" class="logo" alt="hola">
+            <h2 class="copy-header">
+                <em class="fas fa-hand-holding-usd"></em>
+                Compra en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+
+        <a href="#" class="hamburger-button">
+            <em class="fas fa-bars"></em>
+        </a>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="register">
+                    Crea tu cuenta
+                    <i class="fas fa-credit-card"></i>
+                </a></li>
+                <li><a href="login">
+                    Ingresa
+                    <i class="fas fa-sign-in-alt"></i>
+                </a></li>
+                <li><a href="#">
+                    Mis compras
+                    <i class="fas fa-shopping-basket"></i>
+                </a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="form-title">
+    <h2>Ingresar</h2>
+    </div>
+
+    <form action="/views/home.html" method="POST" class="login-form">
+        <div class="control-form">
+
+        <div class="control-form">
+            <label for="usuario">Usuario:</label>
+            <input type="text" name="usuario" class="control">
+        </div>
+
+        <div class="control-form">
+            <label for="password">Contrasenia:</label>
+                <input type="password" name="password">
+        </div>
+        <button type="submit" class="button-form">Ingresar</button>
+    </form>
+</body>
+</html>

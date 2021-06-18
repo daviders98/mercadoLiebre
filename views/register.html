@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mercado Liebre</title>
+    <link rel="stylesheet" href="/css/register.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c7be41f1be.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="main-header-top-bar">
+            <img src="images/mercado-libre-logo.svg" class="logo" alt="hola">
+            <h2 class="copy-header">
+                <em class="fas fa-hand-holding-usd"></em>
+                Compra en cuotas y sin tarjeta de crédito
+            </h2>
+        </div>
+
+        <a href="#" class="hamburger-button">
+            <em class="fas fa-bars"></em>
+        </a>
+
+        <nav class="main-navbar">
+            <ul class="left-navbar">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="right-navbar">
+                <li><a href="register">
+                    Crea tu cuenta
+                    <i class="fas fa-credit-card"></i>
+                </a></li>
+                <li><a href="login">
+                    Ingresa
+                    <i class="fas fa-sign-in-alt"></i>
+                </a></li>
+                <li><a href="#">
+                    Mis compras
+                    <i class="fas fa-shopping-basket"></i>
+                </a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <div class="form-title">    
+        <h2>Registro de Usuario</h2>
+    </div>
+    <form action="/views/home.html" method="POST" class="register-form">
+        <div class="control-form">
+            <label for="nombre">Nombre y Apellido:</label>
+            <input type="text" name="nombre" class="control" required>
+        </div>
+
+        <div class="control-form">
+            <label for="usuario">Nombre de Usuario:</label>
+            <input type="text" name="usuario" class="control" required minlength="6">
+        </div>
+
+        <div class="control-form">
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" name="fecha-nacimiento" class="control" required>
+        </div>
+
+        <div class="control-form">
+            <label for="domicilio">Domicilio:</label>
+            <textarea name="domicilio" cols="30" rows="2" required></textarea>
+        </div>
+
+        <div class="control-form">
+            <label for="perfil-usuario">Perfil de usuario:</label>
+            <select name="perfil-usuario" class="control">
+                <option value="vender">Vender productos</option>
+                <option value="comprar">Comprar productos</option>
+            </select>
+        </div>
+
+        <div class="control-form">
+            <label for="categorias">Categorias de interes:</label>
+            <input type="checkbox" name="categorias" value="electro"> Electro
+            <input type="checkbox" name="categorias" value="moda"> Moda
+            <input type="checkbox" name="categorias" value="hogar"> Hogar
+            <input type="checkbox" name="categorias" value="jugueteria"> Jugueteria
+            <input type="checkbox" name="categorias" value="vida-sana"> Vida sana
+        </div>
+
+        <div class="control-form">
+            <label for="foto-usuario">Foto de usuario:</label>
+            <select name="foto-usuario" class="control">
+                <input type="file" required>
+            </select>
+        </div>
+
+        <div class="control-form">
+            <label for="password">Contrasenia:</label>
+                <input type="password" name="password" required minlength="8">
+        </div>
+
+        <div class="control-form">
+            <label for="password">Confirmar contrasenia:</label>
+                <input type="password" name="password" required minlength="8">
+        </div>
+
+        <button type="reset" class="button-form">Borrar</button>
+        <button type="submit" class="button-form">Guardar</button>
+    </form>
+</body>
+</html>
